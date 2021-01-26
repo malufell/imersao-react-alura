@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
 import React from 'react';
