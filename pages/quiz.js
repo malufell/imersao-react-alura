@@ -1,4 +1,4 @@
-s/* eslint-disable react/prop-types */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -61,7 +61,7 @@ function QuestionWidget({ question, questionIndex, totalQuestions, onSubmit }) {
             const alternativeId = `alternative__${alternativeIndex}`;
 
             return (
-              <Widget.Topic as="label" htmlFor={alternativeId} >
+              <Widget.Topic as="label" key={alternativeId} htmlFor={alternativeId} >
                 <input
                   // style={{ display: 'none' }}
                   id={alternativeId}
