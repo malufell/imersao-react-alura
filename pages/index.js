@@ -9,6 +9,9 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizCard from '../src/components/QuizCard';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+// import Button from '../src/components/Button'; é o componente feito na aula que eu resolvi não usar
+// import Input from '../src/components/Input'; é o componente feito na aula que eu resolvi não usar
+
 
 // essa é a div do quiz
 export const QuizContainer = styled.div`
@@ -50,6 +53,7 @@ export default function Home() {
             >
               <QuizCard.Input
                 onChange={(infosDoEvento) => {
+                  console.log(infosDoEvento);
                   setName(infosDoEvento.target.value);
                 }}
                 placeholder="Informe como gostaria de ser chamada(o)"
@@ -59,7 +63,6 @@ export default function Home() {
               </QuizCard.Button>
             </form>
           </Widget.Content>
-
         </Widget>
 
         <Widget>

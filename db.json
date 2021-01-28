@@ -2,27 +2,29 @@
     "bg": "https://wallpaperset.com/w/full/8/8/f/541881.jpg",
     "title": "Legen …wait for it… dary!",
     "description": "Teste os seus conhecimentos sobre a série How I Met Your Mother!",
+    "loading": "https://media.giphy.com/media/3AMRa6DRUhMli/giphy.gif",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media.giphy.com/media/z6BeyFxDYDBNC/giphy.gif",
+        "title": "Qual o nome do lugar onde a galera se encontra com mais frequência?",
+        "description": "Dica: não é uma cafeteria!",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "MacLaren's pub",
+          "Legendary pub",
+          "Yellow pub"
+
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://wallpaperset.com/w/full/8/8/f/541881.jpg",
+        "title": "Qual dos personagens nunca sai mal em uma foto?",
+        "description": "Essa é bem óbvia!",
+        "answer": 1,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Ted",
+           "Barney",
+           "Robin"
         ]
       }
     ],
