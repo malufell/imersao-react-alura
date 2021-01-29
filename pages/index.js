@@ -94,3 +94,22 @@ export default function Home() {
     </QuizBackground>
   );
 }
+
+
+{/* <ExternalQuizList hasName={hasName}>
+    {db.external.map((url) => {
+        const prepareUrl = url
+            .replace(/\//g, '')
+            .replace('https:', '')
+            .replace('.vercel.app', '');
+
+        const [repoName, user] = prepareUrl.split('.');
+        return (
+            <li key={url}>
+                <Widget.Topic href={`/quiz/${user}__${repoName}?name=${name}`}>
+                    {`${user}/${repoName}`}
+                </Widget.Topic>
+            </li>
+        );
+    })}
+</ExternalQuizList> */}
