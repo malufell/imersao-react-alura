@@ -1,17 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Lottie from 'react-lottie';
-import loadingAnimation from '../../src/components/Animations/loading.json'
+import { useRouter } from 'next/router';
+import loadingAnimation from '../../src/components/Animations/loading.json';
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
 import QuizLogo from '../../src/components/QuizLogo';
 import QuizBackground from '../../src/components/QuizBackground';
 import QuizContainer from '../../src/components/QuizContainer';
 import AlternativesForm from '../../src/components/AlternativesForm';
-import Button from '../../src/components/Button';
-import { useRouter } from 'next/router';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
-
+import Button from '../../src/components/Button';
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -26,7 +25,12 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <p><strong>{ name }</strong>, você acertou {' '}
+        <p>
+          <strong>
+            { name }
+          </strong>
+          , você acertou
+          {' '}
           {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
             if (isAcerto) {
@@ -41,7 +45,13 @@ function ResultWidget({ results }) {
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              # {index + 1} {' '} {result === true ? 'Acertou \o/' : 'Errou =/'}
+              #
+              {' '}
+              {index + 1}
+              {' '}
+              {' '}
+              {' '}
+              {result === true ? 'Acertou' : 'Errou'}
             </li>
           ))}
         </ul>
@@ -49,7 +59,6 @@ function ResultWidget({ results }) {
     </Widget>
   );
 }
-
 
 function LoadingWidget() {
   const router = useRouter();
@@ -60,18 +69,18 @@ function LoadingWidget() {
     autoplay: true,
     animationData: loadingAnimation,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
+      preserveAspectRatio: 'xMidYMid slice',
+    },
   };
 
   return (
     <Widget>
       <Widget.Header>
-        {`${ name }, aguarde enquanto selecionamos as perguntas mais difíceis!`}
+        {`${name}, aguarde enquanto selecionamos as perguntas mais difíceis!`}
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        <Lottie 
+        <Lottie
           options={defaultOptions}
           height={250}
           width={400}
@@ -102,7 +111,8 @@ function QuestionWidget({
       </Widget.Header>
 
       <img
-        alt="Descrição" style={{
+        alt="Descrição"
+        style={{
           width: '100%',
           height: '150px',
           objectFit: 'cover',
@@ -110,8 +120,16 @@ function QuestionWidget({
         src={question.image}
       />
       <Widget.Content>
-        <h2> {question.title} </h2>
-        <p> {question.description} </p>
+        <h2>
+          {' '}
+          {question.title}
+          {' '}
+        </h2>
+        <p>
+          {' '}
+          {question.description}
+          {' '}
+        </p>
 
         <AlternativesForm
           onSubmit={(infosDoEvento) => {
@@ -174,7 +192,7 @@ export default function QuizPage() {
   const question = db.questions[questionIndex];
 
   function addResult(result) {
-    setResults([ ...results, result ]);
+    setResults([...results, result]);
   }
 
   React.useEffect(() => {
@@ -207,7 +225,6 @@ export default function QuizPage() {
         )}
 
         {screenState === screenStates.LOADING && <LoadingWidget />}
-
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>
     </QuizBackground>

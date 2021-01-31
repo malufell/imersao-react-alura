@@ -19,6 +19,10 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    "react/jsx-one-expression-per-line" : [ <disabled> ],
+    'linebreak-style': 0,
+    'import/no-unresolved': [
+      2,
+      { caseSensitive: false },
+    ],
   },
 };
