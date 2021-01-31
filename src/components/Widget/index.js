@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
