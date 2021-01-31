@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
-  /* New styles */
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', sans-serif;
@@ -31,6 +30,7 @@ const { theme } = db;
 
 // eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -48,6 +48,7 @@ export default function App({ Component, pageProps }) {
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
+
     </>
   );
 }

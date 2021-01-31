@@ -2,7 +2,6 @@
     "bg": "https://wallpaperset.com/w/full/8/8/f/541881.jpg",
     "title": "Legen …wait for it… dary!",
     "description": "Teste os seus conhecimentos sobre a série How I Met Your Mother!",
-    "loading": "https://media.giphy.com/media/3AMRa6DRUhMli/giphy.gif",
     "questions": [
       {
         "image": "https://media.giphy.com/media/z6BeyFxDYDBNC/giphy.gif",
@@ -13,23 +12,56 @@
           "MacLaren's pub",
           "Legendary pub",
           "Yellow pub"
-
         ]
       },
       {
-        "image": "https://wallpaperset.com/w/full/8/8/f/541881.jpg",
-        "title": "Qual dos personagens nunca sai mal em uma foto?",
-        "description": "Essa é bem óbvia!",
+        "image": "https://media.giphy.com/media/WoQiAod6uvFdQ6ElAL/giphy.gif",
+        "title": "O que acontece depois das 2 horas da manhã?",
+        "description": "Essa até sua mãe sabe",
         "answer": 1,
         "alternatives": [
+          "É um ótimo horário para estudar React",
+          "Nada de bom, vá dormir!",
+           "Você pode ter pesadelos sobre animações em CSS"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/NovZuuo1MDZqo/giphy.gif",
+        "title": "Qual dos personagens nunca sai mal em uma foto?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
            "Ted",
-           "Barney",
-           "Robin"
+           "Robin",
+           "Barney"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/wUqZbMBUsYRkQ/giphy.gif",
+        "title": "Por perder uma aposta com Marshall e Lilly, Barney deveria usar uma gravata com estampa de ...",
+        "description": "Faz 'quack'",
+        "answer": 1,
+        "alternatives": [
+           "Dinossauro",
+           "Pato amarelo",
+           "Corações"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2JhEWmDOrIWnXZ4Y/giphy.gif",
+        "title": "Antes de casar, Marshall ...",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "Raspou o meio da cabeça e teve que disfarçar com um chapéu",
+           "Foi aprovado em um concurso",
+           "Foi eleito vereador"
         ]
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://aluraquiz-css.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {
