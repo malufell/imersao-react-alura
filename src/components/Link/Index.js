@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
+// lib interna do next
 import React from 'react';
 import NextLink from 'next/link';
 
