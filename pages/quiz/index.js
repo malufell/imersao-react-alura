@@ -41,7 +41,7 @@ function ResultWidget({ results }) {
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              # {index + 1} {' '} {result === true ? 'Acertou' : `'Errou ' ${questions}`}
+              # {index + 1} {' '} {result === true ? 'Acertou \o/' : 'Errou =/'}
             </li>
           ))}
         </ul>
