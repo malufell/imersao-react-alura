@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Lottie from 'react-lottie';
 import { useRouter } from 'next/router';
+import Lottie from 'react-lottie';
 import loadingAnimation from '../../src/components/Animations/loading.json';
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
