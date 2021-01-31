@@ -6,7 +6,7 @@ import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
-import BackLinkArrow from '../../components/BackLinkArrow';
+import BackLinkArrow from '../../components/BackLinkArrow/Index';
 
 function ResultWidget({ results }) {
   return (
