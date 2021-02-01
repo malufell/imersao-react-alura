@@ -1,41 +1,62 @@
-### Imersão React e Next da Alura!
+## Quiz
 
-Quiz da série How I Met Your Mother:
+Projeto desenvolvido com React e Next durante a imersão da Alura! 
 
-https://imersao-react-alura.malufell.vercel.app/
+Quiz da série How I Met Your Mother, [veja aqui o resultado](https://imersao-react-alura.malufell.vercel.app/)!
 
+- Usuário informa o nome, passa pela tela de loading e visualiza a primeira pergunta;
+- Ao selecionar uma das opções e confirmar o envio da resposta, recebe um retorno visual se acertou ou errou, passando para a próxima questão;
+- Ao final das perguntas o usuário visualiza na tela de resultados quantas questões acertou.
+- Na tela inicial, há a possibilidade de escolher outro quiz na lista dos "quizes da galera". Com a funcionalidade de api do Next.js os outros "quizes" irão carregar na minha própria URL e sem refresh entre as páginas :heart:
 
 ![image](https://user-images.githubusercontent.com/62160705/106399157-c6e58500-63f5-11eb-93bc-c4814f8aea2c.png)
 
+## Tecnologias utilizadas 
 
-:arrow_right: React;<br>
-:arrow_right: Next;<br>
-:arrow_right: Styled-components;<br>
-:arrow_right: Prop-types;<br>
-:arrow_right: Framer Motion;<br>
-:arrow_right: Lottie;<br>
+- [React](https://pt-br.reactjs.org/): biblioteca JavaScript para criar interfaces de usuário.
+- [Next.js](https://nextjs.org/): framework React com foco em produção e eficiência, fornece uma estrutura completa para o start de um projeto.
+- [Styled-components](https://styled-components.com/): dentre diversos recursos, permite a escrita de CSS em JavaScript usando template string.
+- [Prop-types](https://www.npmjs.com/package/prop-types): utilizado para tipagem de dados na aplicação React.
+- [Framer Motion](https://www.framer.com/motion/): biblioteca utilizada para criar animações de entrada nos componentes. 
+- [Lottie](https://lottiefiles.com/): fornece animações no formato JSON, utilizado para inclusão do efeito de loading.
 
-Um pouco do que rolou na imersão:
+Deploy realizado (de forma muito rápida e simples!) na plataforma [Vercel](https://vercel.com/docs).
 
-- Como fazer a publicação (deploy) na Vercel;
-- Criar componentes complexos com styled-components;
-- Utilizar props com os componentes;
+## Um pouquinho 
+
+- Criação de componentes complexos com styled-components;
+- Uso de props com os componentes;
 - Captura de eventos em formulários;
-- Gerenciar state de componentes com hooks;
-- Passar dados em URLs através de query params;
-- Utilizar next/router para implementação de rotas;
-- Garantir a tipagem das propriedades com a biblioteca prop-types
-- Trabalhar com os estados (states) da página de quiz para alternar carregamento, questões e resultado
-- Entender o ciclo de vida dos componentes do React
-- Utilizar useEffects()
-- Statements x expressões no React
-- Manejo de estados com a renderização de várias instâncias de um mesmo componente e a prop key
-- Criar lambda servers com Next.js para retornar endpoints
-- Passar configurações de CORS para poder acessar quizes externos
-- Criar rotas com parâmetros dinâmicos com Next.js
-- Usar métodos de otimização por SSR para criar páginas dinâmicas
-- Trabalhar com promessas utilizando a Fetch API e Promises
-- Passar para a página de quiz as props dos quizes externos
-- Usar o componente do Next.js para fazer a navegação no formato SPA
-- Usar o Framer Motion para criar animações de entrada para os widgets
-- Usar o Lottie para incluir animações de carregamento
+- Gerenciamento do state de componentes com hooks;
+- Uso do next/router para implementação de rotas;
+- Tipagem de dados das propriedades;
+- Ciclo de vida dos componentes do React e useEffects();
+- Métodos de otimização por SSR para criação de páginas dinâmicas;
+- Fetch API para buscar dados de outros quizes e exibir na minha aplicação;
+- Uso do Next.js para fazer a navegação no formato SPA (sem refresh na página);
+
+## Como executar o projeto
+
+A instalação do [node.js](https://nodejs.org/en/) é necessária para rodar a aplicação :blush:
+
+```
+# Clone este repositório
+$ git clone https://github.com/malufell/imersao-react-alura.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd imersao-react-alura
+
+# Instale as dependências
+$ npm install
+# ou
+$ yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+# ou
+$ yarn dev
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
+
+
