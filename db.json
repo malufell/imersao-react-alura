@@ -60,7 +60,9 @@
       }
     ],
     "external": [
-      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://doctor-who-quiz.emanuelpna.vercel.app/",
+      "https://gotquiz-alura.andysteel.vercel.app/",
+      "https://aluraquiz.josafaverissimo.vercel.app/",
       "https://aluraquiz-css.omariosouto.vercel.app/"
     ],
     "theme": {
