@@ -1,8 +1,8 @@
-## Quiz
+## Quiz da série How I Met Your Mother
 
 Projeto desenvolvido com React e Next durante a imersão da Alura! 
 
-Quiz da série How I Met Your Mother, [veja aqui o resultado](https://imersao-react-alura.malufell.vercel.app/)!
+[Veja aqui o resultado](https://imersao-react-alura.malufell.vercel.app/)!
 
 - Usuário informa o nome, passa pela tela de loading e visualiza a primeira pergunta;
 - Ao selecionar uma das opções e confirmar o envio da resposta, recebe um retorno visual se acertou ou errou, passando para a próxima questão;
@@ -22,7 +22,7 @@ Quiz da série How I Met Your Mother, [veja aqui o resultado](https://imersao-re
 
 Deploy realizado (de forma muito rápida e simples!) na plataforma [Vercel](https://vercel.com/docs).
 
-## Um pouquinho 
+## Um pouquinho do aprendizado :books:
 
 - Criação de componentes complexos com styled-components;
 - Uso de props com os componentes;
