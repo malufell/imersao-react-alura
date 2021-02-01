@@ -7,7 +7,7 @@ Projeto desenvolvido com React e Next durante a imersão da Alura!
 - Usuário informa o nome, passa pela tela de loading e visualiza a primeira pergunta;
 - Ao selecionar uma das opções e confirmar o envio da resposta, recebe um retorno visual se acertou ou errou, passando para a próxima questão;
 - Ao final das perguntas o usuário visualiza na tela de resultados quantas questões acertou.
-- Na tela inicial, há a possibilidade de escolher outro quiz na lista dos "quizes da galera". Com a funcionalidade de api do Next.js os outros "quizes" irão carregar na minha própria URL e sem refresh entre as páginas :heart:
+- Na tela inicial, há a possibilidade de escolher outro quiz na lista dos "quizes da galera". Os outros "quizes" irão carregar na minha própria URL e sem refresh entre as páginas :heart:
 
 ![image](https://user-images.githubusercontent.com/62160705/106504891-4df23600-64a6-11eb-8dab-fcdc851ced99.png)
 
